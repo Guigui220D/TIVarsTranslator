@@ -42,13 +42,19 @@
   <ItemGroup>
     <Compile Include="ByteUtils.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Token.cs" />
     <Compile Include="VariableEntry.cs" />
     <Compile Include="VariableFile.cs" />
     <Compile Include="VariableTypes\ComplexNumber.cs" />
     <Compile Include="VariableTypes\Matrix.cs" />
+    <Compile Include="VariableTypes\Program.cs" />
     <Compile Include="VariableTypes\RealList.cs" />
     <Compile Include="VariableTypes\RealNumber.cs" />
+    <Compile Include="VariableTypes\String.cs" />
+    <Compile Include="VariableTypes\TestProgram.cs" />
     <Compile Include="VariableTypes\TIVar.cs" />
+    <Compile Include="VariableTypes\TokenString.cs" />
+    <Compile Include="VariableTypes\YVariable.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
