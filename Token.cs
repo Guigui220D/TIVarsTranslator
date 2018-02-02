@@ -8,14 +8,14 @@ namespace TIVarsTranslators
 {
     //See http://merthsoft.com/linkguide/ti83+/tokens.html
 
-    [Obsolete("The token lists are bdly wrote, not complete and are not used.")]
+    [Obsolete("These tokens are only valid for Ti-83, and are badly wrote, please use bytes tokens.")]
     public enum MainTokens : byte
     {
         None00,             //
         ToDMS,              //>DMS
         ToDec,              //>Dec
         ToFrac,             //>Frac
-        Assign,             //->
+        VarAssign,          //->
         BoxPlot,            //BoxPlot
         OpenBracket,        //[
         CloseBracket,       //]
@@ -269,7 +269,7 @@ namespace TIVarsTranslators
         LinRegAxPlusB
     }
 
-    [Obsolete("The token lists are badly wrote, not complete and are not used.")]
+    [Obsolete("These tokens are only valid for Ti-83, and are badly wrote, please use bytes tokens.")]
     public static class OtherTokens
     {
         public enum Variables5C : byte
@@ -400,7 +400,7 @@ namespace TIVarsTranslators
             P = 0x22,
             Z = 0x23,
             T = 0x24,
-            ItalicXSquared = 0x25,
+            ChiSquared = 0x25,
             BigF = 0x26,
             Df = 0x27,
             PHat = 0x28,
@@ -495,12 +495,122 @@ namespace TIVarsTranslators
 
         public enum Tokens7E : byte
         {
-
+            Sequantial,
+            Simul,
+            PolarGC,
+            RectGC,
+            CoordOn,
+            CoordOff,
+            Connected,
+            Dot,
+            AxesOn,
+            AxesOff,
+            GridOn,
+            GridOff,
+            LabelOn,
+            LabelOff,
+            Web,
+            Time,
+            UvAxes,
+            VwAxes,
+            UwAxes,
+            NextToIdentitfy
         }
 
         public enum TokensBB : byte
         {
-
+            Npv,
+            Irr,
+            Bal,
+            UpperSigmaPrn,
+            UpperSigmaInt,
+            ToNom,
+            ToEff,
+            Dbd,
+            Lcm,
+            Gcd,
+            RandInt,
+            Sub,
+            StdDev,
+            Variance,
+            InString,
+            NormalCdf,
+            InvNorm,
+            Tcdf,
+            ChiSquaredCdf,
+            BigFCdf,
+            BinomPdf,
+            BinomCdf,
+            PoissonPdf,
+            PoissonCdf,
+            GeometPdf,
+            GeometCdf,
+            NormalPdf,
+            TPdf,
+            ChiSquaredPdf,
+            BigFPdf,
+            RandNorm,
+            TvmPmt,
+            TvmIPercent,
+            TvmPV,
+            TvmBigN,
+            TvmFV,
+            Conj,
+            Real,
+            Imag,
+            Angle,
+            CumSum,
+            Expr,
+            Lenght,
+            DeltaList,
+            Ref,
+            Rref,
+            ToRect,
+            ToPolar,
+            Exponent,
+            SinReg,
+            Logictic,
+            LinRegTTest,
+            ShadeNorm,
+            ShadeT,
+            ShadeChiSquared,
+            ShadeBigF,
+            MatrToList,
+            ListToMatr,
+            ZTest,
+            TTest,
+            _2SampZTest,
+            _1PropZTest,
+            _2PropZTest,
+            ChiSquaredTest,
+            ZInterval,
+            _2SampZInt,
+            _1PropZInt,
+            _2PropZInt,
+            GraphStyle,
+            _2SampTTest,
+            _2SampBigFTest,
+            TInterval,
+            _SampTInt,
+            SetUpEditor,
+            PMTEnd,
+            PMTBgn,
+            RealBis,
+            ReExpThetaI,
+            APlusBi,
+            ExprOn,
+            ExprOff,
+            ClrAllLists,
+            GetCalc,
+            DelVar,
+            EquToString,
+            StringToEqu,
+            ClearEntries,
+            Select,
+            ANOVA,
+            ModBoxPlot,
+            NormProbPlot,
+            NextToIdentitfy
         }
     }
 }

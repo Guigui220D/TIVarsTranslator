@@ -85,5 +85,7 @@ namespace TIVarsTranslators
                 return ".8Xg";
             return entries[0].GetExtension();
         }
+
+        
     }
 }
